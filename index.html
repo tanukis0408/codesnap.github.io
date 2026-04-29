@@ -129,7 +129,7 @@
         }
 
         .btn:hover {
-            background: #4e3e3e;
+            background: #4e4e4e;
             border-color: #007acc;
         }
 
@@ -186,7 +186,7 @@
 
         .theme-option.active {
             border-color: #007acc;
-            background: #4e3e3e;
+            background: #4e4e4e;
         }
 
         .theme-name {
@@ -231,7 +231,7 @@
             cursor: pointer;
         }
 
-        /* === ДОРАБОТКА 1: Нумерация строк === */
+        /* Нумерация строк */
         .code-editor {
             flex: 1;
             display: flex;
@@ -259,7 +259,7 @@
             position: relative;
         }
 
-        /* === ДОРАБОТКА 2: Кастомный скроллбар === */
+        /* Кастомный скроллбар */
         ::-webkit-scrollbar {
             width: 12px;
             height: 12px;
@@ -276,10 +276,10 @@
         }
 
         ::-webkit-scrollbar-thumb:hover {
-            background: #4e3e3e;
+            background: #4e4e4e;
         }
 
-        /* === ДОРАБОТКА 3: Анимации модального окна === */
+        /* Анимации модального окна */
         .preview-modal {
             position: fixed;
             top: 0;
@@ -302,7 +302,7 @@
         }
 
         .preview-content {
-            background: #1e3e3e;
+            background: #1e1e1e;
             border-radius: 12px;
             padding: 20px;
             max-width: 90%;
@@ -318,7 +318,7 @@
             transform: scale(1);
         }
 
-        /* === ДОРАБОТКА 4: Улучшенные вкладки === */
+        /* Улучшенные вкладки */
         .tabs-container {
             display: flex;
             align-items: center;
@@ -330,7 +330,7 @@
             border: 1px solid #454545;
             border-radius: 4px;
             padding: 6px 12px;
-            color: #d4d3e4;
+            color: #d4d4d4;
             font-size: 12px;
             cursor: pointer;
             display: flex;
@@ -366,14 +366,14 @@
 
         .add-tab-btn:hover {
             background: #3e3e3e;
-            color: #d4d3e4;
+            color: #d4d4d4;
         }
 
-        /* === ДОРАБОТКА 5: Tooltip === */
+        /* Tooltip */
         .tooltip {
             position: fixed;
             background: #252525;
-            color: #d4d3e4;
+            color: #d4d4d4;
             padding: 6px 12px;
             border-radius: 4px;
             font-size: 12px;
@@ -391,13 +391,13 @@
             transform: translateY(0);
         }
 
-        /* === НОВЫЙ СТИЛЬ: Выбор стиля окна === */
+        /* Выбор стиля окна */
         .window-style-selector {
             background: #3e3e3e;
             border: 1px solid #454545;
             border-radius: 6px;
             padding: 8px 12px;
-            color: #d4d3e4;
+            color: #d4d4d4;
             font-size: 13px;
             outline: none;
             cursor: pointer;
@@ -425,12 +425,12 @@
         }
 
         .screenshot-window-title {
-            color: #d4d3e4;
+            color: #d4d4d4;
             font-size: 14px;
             font-weight: 500;
         }
 
-        /* macOS style */
+        /* macOS стиль */
         .screenshot-macos .window-control {
             width: 12px;
             height: 12px;
@@ -441,7 +441,7 @@
         .screenshot-macos .minimize { background: #ffbd2e; }
         .screenshot-macos .maximize { background: #28ca42; }
 
-        /* Windows 11 style */
+        /* Windows 11 стиль */
         .screenshot-win11 .window-controls {
             gap: 0;
         }
@@ -454,7 +454,7 @@
             justify-content: center;
             background: transparent;
             border: none;
-            color: #d4d3e4;
+            color: #d4d4d4;
             cursor: pointer;
             transition: background 0.2s;
         }
@@ -483,8 +483,8 @@
         .code-input {
             width: 100%;
             height: 100%;
-            background: #1e3e3e;
-            color: #d4d3e4;
+            background: #1e1e1e;
+            color: #d4d4d4;
             border: none;
             outline: none;
             font-family: 'SF Mono', 'Monaco', 'Menlo', 'Consolas', monospace;
@@ -501,7 +501,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: #1e3e3e;
+            background: #1e1e1e;
             padding: 20px;
             overflow: auto;
             font-family: 'SF Mono', 'Monaco', 'Menlo', 'Consolas', monospace;
@@ -535,7 +535,7 @@
         }
 
         .preview-content {
-            background: #1e3e3e;
+            background: #1e1e1e;
             border-radius: 12px;
             padding: 20px;
             max-width: 90%;
@@ -555,7 +555,7 @@
         }
 
         .preview-title {
-            color: #d4d3e4;
+            color: #d4d4d4;
             font-size: 16px;
             font-weight: 600;
         }
@@ -570,7 +570,7 @@
         }
 
         .close-btn:hover {
-            color: #d4d3e4;
+            color: #d4d4d4;
         }
 
         #previewImage {
@@ -666,7 +666,7 @@
                     <option value="javascript">JavaScript</option>
                     <option value="python">Python</option>
                     <option value="css">CSS</option>
-                    <option value="html">HTML</option>
+                    <option value="markup">HTML</option> <!-- Исправлено: markup вместо html -->
                     <option value="json">JSON</option>
                     <option value="markdown">Markdown</option>
                 </select>
@@ -695,7 +695,6 @@
         <div class="main-content">
             <!-- Sidebar -->
             <div class="sidebar">
-                <!-- === НОВАЯ СЕКЦИЯ: Выбор стиля окна === -->
                 <div class="sidebar-section">
                     <div class="sidebar-title">Стиль окна</div>
                     <select class="window-style-selector" id="windowStyleSelect">
@@ -845,7 +844,7 @@
         const previewImage = document.getElementById('previewImage');
         const loading = document.getElementById('loading');
         const toast = document.getElementById('toast');
-        const windowStyleSelect = document.getElementById('windowStyleSelect'); // Новый элемент
+        const windowStyleSelect = document.getElementById('windowStyleSelect');
 
         const defaultCode = `// Добро пожаловать в CodeSnap!
 // Вставьте ваш код здесь
@@ -865,9 +864,11 @@ for (let i = 0; i < 10; i++) {
         // Обновление подсветки синтаксиса
         function updateSyntaxHighlighting() {
             const code = codeInput.value;
-            const language = languageSelect.value;
+            let language = languageSelect.value;
+            // Prism использует 'markup' для HTML
+            const prismLang = language === 'markup' ? 'markup' : language;
             
-            codeOutput.innerHTML = `<pre><code class="language-${language}">${escapeHtml(code)}</code></pre>`;
+            codeOutput.innerHTML = `<pre><code class="language-${prismLang}">${escapeHtml(code)}</code></pre>`;
             Prism.highlightElement(codeOutput.querySelector('code'));
         }
 
@@ -970,8 +971,7 @@ for (let i = 0; i < 10; i++) {
                     codeInput.value = JSON.stringify(JSON.parse(code), null, 2);
                 } else if (language === 'css') {
                     // Базовое форматирование CSS
-                    const formatted = code.replace(/;/g, ';\n').replace(/{/g, ' {\n').replace(/}/g, '\n}\n');
-                    codeInput.value = formatted;
+                    codeInput.value = code.replace(/;/g, ';\n').replace(/{/g, ' {\n').replace(/}/g, '\n}\n');
                 } else {
                     showToast('Форматирование для этого языка пока не поддерживается', 'info');
                 }
@@ -986,7 +986,7 @@ for (let i = 0; i < 10; i++) {
             }
         }
 
-        // === ИСПРАВЛЕННАЯ ФУНКЦИЯ: Создание скриншота с выбором стиля окна ===
+        // Создание скриншота с выбором стиля окна (исправлено)
         async function takeScreenshot() {
             if (!codeInput.value.trim()) {
                 showToast('Введите код для создания скриншота', 'error');
@@ -996,9 +996,7 @@ for (let i = 0; i < 10; i++) {
             loading.style.display = 'block';
             
             try {
-                const windowStyle = windowStyleSelect.value; // 'macos' или 'win11'
-                
-                // === ИСПРАВЛЕНИЕ БАГА: Правильное получение названия вкладки ===
+                const windowStyle = windowStyleSelect.value;
                 const activeTabEl = document.querySelector('.tab.active');
                 const activeTabId = activeTabEl ? activeTabEl.dataset.tabId : 'tab1';
                 const tabTitle = tabs.get(activeTabId)?.name || 'untitled.js';
@@ -1014,21 +1012,21 @@ for (let i = 0; i < 10; i++) {
                     border: 1px solid #454545;
                     overflow: hidden;
                 `;
+                // Добавляем класс для стилизации кнопок управления окном
+                tempContainer.classList.add(`screenshot-${windowStyle}`);
                 
-                // Добавляем тень, если включена в настройках
                 const addShadow = document.getElementById('addShadow')?.checked ?? true;
                 if (addShadow) {
                     tempContainer.style.boxShadow = '0 25px 50px rgba(0, 0, 0, 0.3)';
                 }
                 
-                // Добавляем header окна
+                // Header окна
                 const windowHeader = document.createElement('div');
-                windowHeader.className = `screenshot-window-header screenshot-${windowStyle}`;
+                windowHeader.className = 'screenshot-window-header';
                 
                 if (windowStyle === 'macos') {
-                    // macOS стиль (кнопки слева)
                     windowHeader.innerHTML = `
-                        <div class="screenshot-window-controls">
+                        <div class="window-controls">
                             <div class="window-control close"></div>
                             <div class="window-control minimize"></div>
                             <div class="window-control maximize"></div>
@@ -1037,11 +1035,10 @@ for (let i = 0; i < 10; i++) {
                         <div style="width: 60px;"></div>
                     `;
                 } else {
-                    // Windows 11 стиль (кнопки справа)
                     windowHeader.innerHTML = `
                         <div style="width: 60px;"></div>
                         <div class="screenshot-window-title">${tabTitle}</div>
-                        <div class="screenshot-window-controls win-controls">
+                        <div class="window-controls">
                             <button class="win-control-btn win-minimize">
                                 <i class="fas fa-window-minimize"></i>
                             </button>
@@ -1057,16 +1054,16 @@ for (let i = 0; i < 10; i++) {
                 
                 tempContainer.appendChild(windowHeader);
                 
-                // Добавляем обертку для контента
+                // Обертка для контента (без лишних отступов)
                 const contentWrapper = document.createElement('div');
                 contentWrapper.style.cssText = `
                     display: flex;
                     background: #1e1e1e;
-                    padding: ${paddingSlider.value}px;
                 `;
                 
-                // Добавляем нумерацию строк (если включена)
                 const showLines = document.getElementById('showLineNumbers')?.checked ?? true;
+                const paddingVal = paddingSlider.value + 'px';
+                
                 if (showLines) {
                     const linesDiv = document.createElement('div');
                     linesDiv.className = 'line-numbers';
@@ -1074,7 +1071,7 @@ for (let i = 0; i < 10; i++) {
                         width: 50px;
                         background: #252525;
                         color: #858585;
-                        padding: ${paddingSlider.value}px 8px;
+                        padding: ${paddingVal} 8px;
                         text-align: right;
                         font-family: 'SF Mono', monospace;
                         font-size: ${codeInput.style.fontSize};
@@ -1089,13 +1086,13 @@ for (let i = 0; i < 10; i++) {
                     contentWrapper.appendChild(linesDiv);
                 }
                 
-                // Добавляем код
+                // Блок с кодом
                 const codeClone = document.createElement('div');
                 codeClone.innerHTML = codeOutput.innerHTML;
                 codeClone.style.cssText = `
                     flex: 1;
                     background: transparent;
-                    padding: 0;
+                    padding: ${paddingVal};
                     margin: 0;
                     font-family: ${codeInput.style.fontFamily};
                     font-size: ${codeInput.style.fontSize};
@@ -1119,6 +1116,10 @@ for (let i = 0; i < 10; i++) {
                 
                 const dataURL = canvas.toDataURL('image/png');
                 previewImage.src = dataURL;
+                
+                // Плавное появление модального окна
+                previewModal.style.display = 'flex';
+                previewModal.offsetHeight; // force reflow
                 previewModal.classList.add('show');
                 
                 showToast(`Скриншот создан в стиле ${windowStyle === 'macos' ? 'macOS' : 'Windows 11'}`);
@@ -1145,7 +1146,7 @@ for (let i = 0; i < 10; i++) {
                 javascript: 'js',
                 python: 'py',
                 css: 'css',
-                html: 'html',
+                markup: 'html',  // HTML
                 json: 'json',
                 markdown: 'md'
             };
@@ -1170,9 +1171,15 @@ for (let i = 0; i < 10; i++) {
             }
         }
 
-        // Закрытие превью
+        // Закрытие превью с анимацией
         function closePreview() {
             previewModal.classList.remove('show');
+            // Скрываем display после завершения анимации
+            const onTransitionEnd = () => {
+                previewModal.style.display = 'none';
+                previewModal.removeEventListener('transitionend', onTransitionEnd);
+            };
+            previewModal.addEventListener('transitionend', onTransitionEnd);
         }
 
         // Скачивание скриншота
@@ -1244,7 +1251,7 @@ for (let i = 0; i < 10; i++) {
             }
         });
 
-        // === ДОРАБОТКА 6: Сохранение настроек ===
+        // Сохранение настроек
         const STORAGE_KEY = 'codesnap_settings';
         
         function loadSettings() {
@@ -1299,12 +1306,13 @@ for (let i = 0; i < 10; i++) {
         document.getElementById('showLineNumbers').addEventListener('change', saveSettings);
         document.getElementById('addShadow').addEventListener('change', saveSettings);
 
-        // === ДОРАБОТКА 7: Обновленная нумерация строк ===
+        // Обновленная нумерация строк
         function updateLineNumbers() {
             const lines = codeInput.value.split('\n').length;
             const lineNumbers = document.getElementById('lineNumbers');
             lineNumbers.innerHTML = Array.from({length: lines}, (_, i) => i + 1).join('<br>');
             lineNumbers.style.paddingTop = codeInput.style.padding || '20px';
+            lineNumbers.style.paddingBottom = codeInput.style.padding || '20px';
         }
 
         codeInput.addEventListener('input', () => {
@@ -1312,7 +1320,7 @@ for (let i = 0; i < 10; i++) {
             updateLineNumbers();
         });
 
-        // === ДОРАБОТКА 8: Управление вкладками ===
+        // Управление вкладками
         let tabCounter = 1;
         const tabs = new Map([['tab1', {name: 'main.js', content: defaultCode}]]);
 
@@ -1352,13 +1360,16 @@ for (let i = 0; i < 10; i++) {
             
             // Переключаемся на новую вкладку
             document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-            document.querySelector(`[data-tab-id="${tabId}"]`).classList.add('active');
+            const newTab = document.querySelector(`[data-tab-id="${tabId}"]`);
+            if (newTab) newTab.classList.add('active');
             
             // Загружаем контент
             const tab = tabs.get(tabId);
-            codeInput.value = tab.content;
-            updateSyntaxHighlighting();
-            updateLineNumbers();
+            if (tab) {
+                codeInput.value = tab.content;
+                updateSyntaxHighlighting();
+                updateLineNumbers();
+            }
         }
 
         function closeTab(event, tabId) {
@@ -1370,7 +1381,7 @@ for (let i = 0; i < 10; i++) {
             
             tabs.delete(tabId);
             const tabEl = document.querySelector(`[data-tab-id="${tabId}"]`);
-            tabEl.remove();
+            if (tabEl) tabEl.remove();
             
             // Переключаемся на первую вкладку
             const firstTab = document.querySelector('.tab');
@@ -1384,14 +1395,14 @@ for (let i = 0; i < 10; i++) {
                 javascript: 'js',
                 python: 'py',
                 css: 'css',
-                html: 'html',
+                markup: 'html',  // для HTML
                 json: 'json',
                 markdown: 'md'
             };
             return extensions[languageSelect.value] || 'txt';
         }
 
-        // === ДОРАБОТКА 10: Улучшенный tooltip ===
+        // Улучшенный tooltip
         function createTooltip(element, text) {
             element.addEventListener('mouseenter', (e) => {
                 const tooltip = document.getElementById('globalTooltip');
@@ -1408,13 +1419,13 @@ for (let i = 0; i < 10; i++) {
             });
         }
 
-        // Добавляем tooltips к кнопкам
+        // Добавляем tooltips к кнопкам после загрузки DOM
         document.addEventListener('DOMContentLoaded', () => {
             createTooltip(document.querySelector('.add-tab-btn'), 'Добавить новую вкладку');
             createTooltip(document.querySelector('.btn-primary'), 'Сделать скриншот (Ctrl+S)');
         });
 
-        // === Инициализация ===
+        // Инициализация
         loadSettings();
         updateLineNumbers();
     </script>
